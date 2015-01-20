@@ -12,4 +12,8 @@ Taking notes app
 
 * Postgres
 
+* Devise
+
+* Simple form
+
 
