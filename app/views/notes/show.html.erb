@@ -1,4 +1,6 @@
 <h1><%= @note.title %></h1>
 <h1><%= @note.content %></h1>
 
-<%= link_to "All Notes", notes_path %>
+<p><%= link_to "All Notes", notes_path %><p>
+<p><%= link_to "Edit", edit_note_path(@note) %></p>
+<p><%= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are You Sure?" } %></p>
