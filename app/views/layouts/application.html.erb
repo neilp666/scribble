@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Scribble</title>
+  <title>Welcome to Scribble  | Your online Notebook App</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 	
-	<p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+<%= render 'layouts/header' %>
 
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<div class="container">
 <%= yield %>
+</div>
 
 </body>
 </html>
